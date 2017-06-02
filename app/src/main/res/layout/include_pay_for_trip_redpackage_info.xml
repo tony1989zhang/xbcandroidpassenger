@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/lineSolidColor"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:text="优惠红包"
+            android:textColor="@color/text_default_color"
+            android:textSize="@dimen/text_default_size"/>
+
+        <TextView
+            android:id="@+id/tv_select_redpackage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical|right"
+            android:drawableRight="@mipmap/item_back_icon"
+            android:drawablePadding="5dp"
+            android:hint="暂无红包可用"
+            android:textColor="@color/text_default_color"
+            android:textSize="@dimen/text_default_size"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

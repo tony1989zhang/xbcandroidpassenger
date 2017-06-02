@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@id/view_divider"
+        >
+        <com.lvchehui.www.xiangbc.view.TitleView
+            android:id="@+id/title_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </com.lvchehui.www.xiangbc.view.TitleView>
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:gravity="center"
+            android:background="@color/tab_bg_color"
+            android:elevation="0.5dp"
+            android:weightSum="2" >
+
+            <TextView
+                android:id="@+id/tvcontact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:shadowDy="0.5"
+                android:shadowRadius="0.5"
+                android:text="@string/hint_contact"
+                android:textSize="@dimen/text_default_size" />
+            <!--android:shadowColor="#000000"-->
+            <!--<View
+                android:layout_width="1sp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/hintColor" />-->
+
+            <TextView
+                android:id="@+id/tvInvoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:shadowDy="0.5"
+                android:shadowRadius="0.5"
+                android:text="@string/invoice"
+                android:textSize="@dimen/text_default_size" />
+            <!--android:shadowColor="#000000"-->
+            <!-- <View -->
+            <!-- android:layout_width="1sp" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:layout_marginBottom="20dp" -->
+            <!-- android:layout_marginTop="20dp" -->
+            <!-- android:background="@color/hintColor" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/tv_tx2" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:gravity="center" -->
+            <!-- android:text="提现" -->
+            <!-- android:textAppearance="?android:attr/textAppearanceLarge" /> -->
+        </LinearLayout>
+        <View
+            style="@style/lineSolid"
+            />
+
+
+        <com.lvchehui.www.xiangbc.view.dragtop.BanSlidingViewPage
+            android:id="@+id/banSlidingView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            >
+        </com.lvchehui.www.xiangbc.view.dragtop.BanSlidingViewPage>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="@drawable/btn_bottom_bg_outside"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:text="新增"
+            style="@style/BottomBtn"
+            />
+    </RelativeLayout>
+</RelativeLayout>

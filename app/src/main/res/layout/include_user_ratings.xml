@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_user_include"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:drawableLeft="@drawable/smail_circle"
+                android:drawablePadding="5dp"
+                android:text="用户评分"
+                android:textColor="@color/warmGrey"
+                android:textSize="@dimen/text_middle_size" />
+
+            <TextView
+                android:id="@+id/tv_user_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:background="@color/divider" />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:layout_marginLeft="15dp">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="车况新旧"
+                    android:gravity="center|left"
+                    android:textColor="@color/text_default_color"
+                    android:textSize="@dimen/text_default_size" />
+
+                <com.lvchehui.www.xiangbc.view.RatingBarView
+                    xmlns:bao="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/rating_car_n"
+                    bao:starImageSize = "15dp"
+                    bao:starCount = "5"
+                    android:layout_marginLeft="5dp"
+                    bao:starEmpty = "@mipmap/ic_star_empty"
+                    bao:starFill = "@mipmap/ic_star_fill"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </com.lvchehui.www.xiangbc.view.RatingBarView>
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center|left"
+                    android:text="车辆卫生"
+                    android:textColor="@color/text_default_color"
+                    android:textSize="@dimen/text_default_size" />
+
+
+                <com.lvchehui.www.xiangbc.view.RatingBarView
+                    xmlns:bao="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/rating_ws"
+                    bao:starImageSize = "15dp"
+                    bao:starCount = "5"
+                    bao:starEmpty = "@mipmap/ic_star_empty"
+                    bao:starFill = "@mipmap/ic_star_fill"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </com.lvchehui.www.xiangbc.view.RatingBarView>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:layout_marginLeft="15dp">
+
+                <TextView
+                    android:id="@+id/tv_server"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="司机准点"
+                    android:gravity="center|left"
+                    android:textColor="@color/text_default_color"
+                    android:textSize="@dimen/text_default_size" />
+
+
+                <com.lvchehui.www.xiangbc.view.RatingBarView
+                    xmlns:bao="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/rating_server"
+                    bao:starImageSize = "15dp"
+                    bao:starCount = "5"
+                    bao:starEmpty = "@mipmap/ic_star_empty"
+                    bao:starFill = "@mipmap/ic_star_fill"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </com.lvchehui.www.xiangbc.view.RatingBarView>
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center|left"
+                    android:text="服务态度"
+                    android:textColor="@color/text_default_color"
+                    android:textSize="@dimen/text_default_size" />
+
+
+                <com.lvchehui.www.xiangbc.view.RatingBarView
+                    xmlns:bao="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/rating_ontime"
+                    bao:starImageSize = "15dp"
+                    bao:starCount = "5"
+                    bao:starEmpty = "@mipmap/ic_star_empty"
+                    bao:starFill = "@mipmap/ic_star_fill"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </com.lvchehui.www.xiangbc.view.RatingBarView>
+
+            </TableRow>
+
+        </TableLayout>
+
+</LinearLayout>

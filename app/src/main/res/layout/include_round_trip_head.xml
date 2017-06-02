@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <View
+        style="@style/lineSolid"
+        />
+
+    <!--出发时间-->
+    <include layout="@layout/ll_start_time"/>
+    <View
+        style="@style/lineSolid_center"
+        />
+
+    <!--返程时间-->
+    <include layout="@layout/ll_back_time"/>
+    <View
+        style="@style/lineSolid_center"
+        />
+
+    <!--出发地-->
+    <include layout="@layout/ll_start_area"/>
+    <View
+        style="@style/lineSolid_center"
+        />
+
+    <!--目的地-->
+    <include layout="@layout/ll_dest_area"/>
+    <View
+        style="@style/lineSolid_center"
+        />
+
+    <!--途径地点-->
+    <include layout="@layout/ll_passby_area"/>
+    <View
+        style="@style/lineSolid_center"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        />
+
+    <!--新增途径地点-->
+    <include layout="@layout/ll_add_passby_area"/>
+
+    <View
+        style="@style/lineSolid_center"
+        />
+</LinearLayout>

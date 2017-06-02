@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/login_bg_img"
+              android:orientation="vertical"
+    >
+    <!--android:background="@mipmap/login_bg_img"-->
+
+    <com.lvchehui.www.xiangbc.view.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <com.lvchehui.www.xiangbc.view.dragtop.DragTopLayout
+        android:id="@+id/drag_top_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/top_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/instant_register_tv"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/btn_bottom_bg_selector"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text= "@string/instant_register"
+                android:textColor="@color/white"
+                android:shadowColor="@color/btn_text_shadow_color"
+                android:shadowDy="1"
+                android:textSize="@dimen/text_default_size"/>
+                <!--android:background="@drawable/tag_normal_trap"-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="36dp"
+                android:text= "@string/account_registered"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_middle_size"/>
+
+            <TextView
+                android:id="@+id/telephone_number_login_tv"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center|left"
+                android:hint="@string/hint_telephone_number_login"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                style="@style/HintEt"/>
+
+            <!--android:background="@drawable/tag_bg_selector"-->
+            <TextView
+                android:id="@+id/forget_pwd_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/forget_password"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_middle_size"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/drag_content_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <com.lvchehui.www.xiangbc.view.EditText.EditTextWithDel
+                android:id="@+id/account_et"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="40dp"
+                android:digits="@string/digits_num"
+                android:gravity="center|left"
+                android:hint="@string/hint_input_account"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                style="@style/HintEt"
+                />
+            <!--android:background="@drawable/tag_bg_selector"-->
+            <com.lvchehui.www.xiangbc.view.EditText.EditTextForPwd
+                android:id="@+id/password_et"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:digits="@string/digits_pwd"
+                android:gravity="center|left"
+                android:hint="@string/hint_input_password"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:maxLines="1"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                style="@style/HintEt"/>
+
+            <TextView
+                android:id="@+id/login_tv"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/btn_bottom_bg_selector"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/login"
+                android:shadowColor="@color/btn_text_shadow_color"
+                android:shadowDy="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_default_size"/>
+
+            <TextView
+                android:id="@+id/forget_pwd_tv_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/forget_password"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_middle_size"/>
+        </LinearLayout>
+    </com.lvchehui.www.xiangbc.view.dragtop.DragTopLayout>
+</LinearLayout>

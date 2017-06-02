@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:padding="5dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="left|center"
+            android:padding="5dp"
+            >
+            <com.lvchehui.www.xiangbc.view.RatingBarView
+            xmlns:bao="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/rating_ontime"
+            bao:starImageSize = "28dp"
+            bao:starCount = "5"
+            bao:starEmpty = "@mipmap/ic_star_empty"
+            bao:starFill = "@mipmap/ic_star_fill"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.lvchehui.www.xiangbc.view.RatingBarView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_default_color"
+                android:textSize="@dimen/text_default_size"
+                android:text="司机准点"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_ontime"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:text="@string/eva_please"
+            android:textSize="@dimen/text_default_size"
+            android:textColor="@color/text_black"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="left|center"
+            android:padding="5dp"
+            >
+            <com.lvchehui.www.xiangbc.view.RatingBarView
+                xmlns:bao="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/rating_server"
+                bao:starImageSize = "28dp"
+                bao:starCount = "5"
+                bao:starEmpty = "@mipmap/ic_star_empty"
+                bao:starFill = "@mipmap/ic_star_fill"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </com.lvchehui.www.xiangbc.view.RatingBarView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_default_color"
+                android:textSize="@dimen/text_default_size"
+                android:text="司机服务"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_server"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:text="@string/eva_please"
+            android:textSize="@dimen/text_default_size"
+            android:textColor="@color/text_default_color"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="left|center"
+            android:padding="5dp"
+            >
+            <com.lvchehui.www.xiangbc.view.RatingBarView
+                xmlns:bao="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/rating_health"
+                bao:starImageSize = "28dp"
+                bao:starCount = "5"
+                bao:starEmpty = "@mipmap/ic_star_empty"
+                bao:starFill = "@mipmap/ic_star_fill"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </com.lvchehui.www.xiangbc.view.RatingBarView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_default_color"
+                android:textSize="@dimen/text_default_size"
+                android:text="车辆卫生"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_health"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:textSize="@dimen/text_default_size"
+            android:text="@string/eva_please"
+            android:textColor="@color/text_default_color"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="left|center"
+            android:padding="5dp"
+            >
+            <com.lvchehui.www.xiangbc.view.RatingBarView
+                xmlns:bao="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/rating_car_situation"
+                bao:starImageSize = "28dp"
+                bao:starCount = "5"
+                bao:starEmpty = "@mipmap/ic_star_empty"
+                bao:starFill = "@mipmap/ic_star_fill"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </com.lvchehui.www.xiangbc.view.RatingBarView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_default_color"
+                android:textSize="@dimen/text_default_size"
+                android:text="车况新旧"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_car_situation"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:text="@string/eva_please"
+            android:textSize="@dimen/text_default_size"
+            android:textColor="@color/text_default_color"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.lvchehui.www.xiangbc.view.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <com.lvchehui.www.xiangbc.view.ImageCycleView
+        android:id="@+id/image_cv"
+        android:layout_width="wrap_content"
+        android:scaleType="fitCenter"
+        android:layout_height="220dp" />
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="5dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@color/title_bg_color" />-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@color/swipe_refrsh_color3" />-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@color/title_bg_color" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/small_ll"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:orientation="horizontal">-->
+
+
+
+    <!--</LinearLayout>-->
+
+    <!--<View style="@style/lineSolid"></View>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <RelativeLayout
+                    android:id="@+id/rl_make_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="50dp"
+                    android:paddingRight="66dp"
+                    android:background="@drawable/bg_white_gray"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iv_make_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@mipmap/home_makemony_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_make_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_make_money"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="赚钱去"
+                        android:textColor="@color/text_default_color"
+                        android:textSize="@dimen/text_middle_size" />
+                </RelativeLayout>
+                <View
+                    style="@style/lineSolid_height"
+                    android:layout_height="match_parent"
+                    android:layout_width="1px"
+                    android:layout_marginTop="28dp"
+                    />
+                <RelativeLayout
+                    android:id="@+id/rl_ride"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="50dp"
+                    android:paddingLeft="66dp"
+                    android:background="@drawable/bg_white_gray"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iv_ride"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@mipmap/home_ride_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_ride"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_ride"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="顺风车"
+                        android:textColor="@color/text_default_color"
+                        android:textSize="@dimen/text_middle_size" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View style="@style/lineSolid"
+                  android:layout_marginLeft="28dp"
+                  android:layout_marginRight="28dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:id="@+id/rl_mine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="50dp"
+                    android:paddingRight="66dp"
+                    android:background="@drawable/bg_white_gray"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iv_mine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@mipmap/home_mine_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_mine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_mine"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="我的"
+                        android:textColor="@color/text_default_color"
+                        android:textSize="@dimen/text_middle_size" />
+                </RelativeLayout>
+                 <View style="@style/lineSolid_height"
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="28dp"
+                     />
+                <RelativeLayout
+                    android:id="@+id/rl_itinerary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="50dp"
+                    android:paddingLeft="66dp"
+                    android:background="@drawable/bg_white_gray"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iv_itinerary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@mipmap/home_menu_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_itinerary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_itinerary"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="行程"
+                        android:textColor="@color/text_default_color"
+                        android:textSize="@dimen/text_middle_size" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+         <RelativeLayout
+              android:id="@+id/rl_requirements"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+             android:layout_centerInParent="true"
+              >
+
+              <ImageView
+                  android:id="@+id/iv_requirements"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:background="@mipmap/home_requirements_icon"
+                  android:tint="#6a6aff"/>
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:gravity="center"
+                  android:text="立\t即\n约\t车"
+                  android:textColor="@color/white"
+                  android:shadowColor="@color/btn_text_shadow_color"
+                  android:shadowDy="1"
+                  android:shadowRadius="1"
+                  android:textSize="@dimen/text_req_size"
+                  />
+          </RelativeLayout>
+
+    </RelativeLayout>
+    <!--  <RelativeLayout
+          android:id="@+id/rl_requirements"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          >
+
+          <ImageView
+              android:id="@+id/iv_requirements"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:background="@mipmap/home_requirements_icon"
+              android:tint="#6a6aff"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:gravity="center"
+              android:text="立\t即\n约\t车"
+              android:textColor="@color/title_bg_color"
+              android:textSize="@dimen/text_req_size"
+              />
+      </RelativeLayout>-->
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center|left"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/bg_white_gray"
+    >
+    <LinearLayout
+        android:id="@+id/ll_mutilday_trip_singleday_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_gray"
+        android:gravity="center_vertical"
+        android:minHeight="48.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/item_wayto_icon"/>
+
+        <!--多日用车的当日用车情况的日期-->
+        <TextView
+            android:id="@+id/tv_mutilday_trip_singleday_date"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="1.0"
+            android:text="@string/default_intraday_date"
+            android:textColor="@color/text_default_lightblack"
+            android:textSize="15.0sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_mutilday_trip_singleday_info"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="3"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_default_size"
+            android:hint="@string/hint_intraday_trip_info" />
+    </LinearLayout>
+
+    <View
+        style="@style/lineSolid_center"
+        />
+</LinearLayout>

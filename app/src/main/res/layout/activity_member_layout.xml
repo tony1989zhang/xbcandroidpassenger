@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true" >
+
+    <com.lvchehui.www.xiangbc.view.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </com.lvchehui.www.xiangbc.view.TitleView>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/title_view"
+        android:background="@color/title_column_color"
+        android:weightSum="3" >
+
+        <TextView
+            android:id="@+id/text_month_year"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+          >
+        </TextView>
+
+        <View style="@style/lineSolid_height"
+               android:layout_marginTop="8dp"
+               android:layout_marginBottom="8dp"
+            />
+
+        <TextView
+            android:id="@+id/text_perpon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="张三" >
+        </TextView>
+        <View style="@style/lineSolid_height"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            />
+        <LinearLayout
+            android:id="@+id/lv_spiner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="日历"
+
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_2"
+        style="@style/lineSolid"
+        android:layout_below="@+id/l2" />
+
+<!--     <com.lvchehui.www.view.wrap.WrapRecyclerView -->
+<!--         android:id="@+id/wrap_recycler" -->
+<!--         android:layout_width="match_parent" -->
+<!--            android:layout_height="wrap_content" -->
+<!--           android:overScrollMode="never" -->
+<!--         android:layout_below="@+id/line_2" -->
+<!--         /> -->
+
+    <TextView
+        android:id="@+id/empty_propt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line_2"
+        android:gravity="center"
+        android:text="测试数据"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="gone" />
+
+    <com.lvchehui.www.xiangbc.view.wrap.WrapRecyclerView
+        android:id="@+id/wrapRecyclerView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/l2" >
+
+    </com.lvchehui.www.xiangbc.view.wrap.WrapRecyclerView>
+
+</RelativeLayout>

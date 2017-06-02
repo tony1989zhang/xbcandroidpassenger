@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/hint_bg_color"
+    >
+
+    <com.lvchehui.www.xiangbc.view.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+       >
+
+        <include
+            android:id="@+id/include_1"
+            layout="@layout/include_item_pei_jia_bao_che" />
+        <!--layout="@layout/include_item_choose_needs" -->
+        <include
+            android:id="@+id/include_2"
+            layout="@layout/include_item_pei_jia_bao_che"/>
+
+        <include
+            android:id="@+id/include_3"
+            layout="@layout/include_item_pei_jia_bao_che" />
+
+        <include
+            android:id="@+id/include_4"
+            layout="@layout/include_item_pei_jia_bao_che" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:text="@string/please_choose_your_needs"
+            android:textSize="@dimen/text_middle_size"
+            android:textColor="@color/warmGrey"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

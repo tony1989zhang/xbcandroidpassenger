@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/libraries/AndroidEventBus-master/AndroidEventBus-master.iml" filepath="$PROJECT_DIR$/libraries/AndroidEventBus-master/AndroidEventBus-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xbcandroidpassenger_new.iml" filepath="$PROJECT_DIR$/xbcandroidpassenger_new.iml" />
+    </modules>
+  </component>
+</project>

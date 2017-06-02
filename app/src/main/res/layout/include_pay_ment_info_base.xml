@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="2dp"
+        android:gravity="center"
+        android:weightSum="5"
+        >
+
+        <View
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/lineSolidColor"
+        />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:textColor="@color/warmGrey"
+            android:textSize="@dimen/text_middle_size"
+            android:text="@string/basic_info"
+            android:gravity="center"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="2"
+            android:layout_marginRight="20dp"
+            android:background="@color/lineSolidColor"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_default_color"
+            android:textSize="@dimen/text_default_size"
+            android:text="03月23日" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/text_default_color"
+            android:textSize="@dimen/text_default_size"
+            android:text="厦门～福州" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/et_campany_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_default_color"
+                android:textSize="@dimen/text_default_size"
+                android:text="王先生" />
+
+            <TextView
+                android:id="@+id/tv_user_telephone_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/text_default_color"
+                android:textSize="@dimen/text_default_size"
+                android:text="15859254561" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_passenger_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_default_color"
+                android:textSize="@dimen/text_default_size"
+                android:text="43人" />
+
+            <TextView
+                android:id="@+id/tv_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/text_default_color"
+                android:textSize="@dimen/text_default_size"
+                android:text="考斯特54座" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

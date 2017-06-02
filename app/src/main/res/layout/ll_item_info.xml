@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_color"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical"
+             >
+
+    <LinearLayout
+        android:id="@+id/ll_item_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_gray"
+        android:gravity="center_vertical"
+        android:minHeight="48.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_item_info_title"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="生日"
+            android:textColor="@color/text_default_lightblack"
+            android:textSize="15.0sp"/>
+
+        <TextView
+            android:id="@+id/tv_item_info_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            android:hint="生日当月用车更优惠"
+            android:padding="5dp"
+            android:textColor="@color/text_default_color"
+            android:textSize="@dimen/text_default_size"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/item_back_icon"/>
+    </LinearLayout>
+
+    <View
+        style="@style/lineSolid"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+</LinearLayout>

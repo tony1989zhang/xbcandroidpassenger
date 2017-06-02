@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@mipmap/item_radio_false"
+          android:state_checked="false"
+        />
+
+    <item android:drawable="@mipmap/tag_true_icon"
+          android:state_checked="true"
+        />
+</selector>

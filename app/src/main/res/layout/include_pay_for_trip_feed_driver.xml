@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="2"
+            android:background="@color/lineSolidColor"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:text="打赏司机"
+            android:textColor="@color/warmGrey"
+            android:textSize="@dimen/text_middle_size"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="2"
+            android:background="@color/lineSolidColor"
+            />
+    </LinearLayout>
+
+    <com.lvchehui.www.xiangbc.view.mutilRadioGroup.MyRadioGroup
+        android:id="@+id/radiogroup_feed_rmb"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/radio_feed_5_yuan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/rect_normal_yellow"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="5元"
+                android:textColor="@drawable/bg_yellow_textcolor"
+                android:textSize="@dimen/text_default_size"
+                />
+
+            <RadioButton
+                android:id="@+id/radio_feed_10_yuan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rect_normal_yellow"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="10元"
+                android:textColor="@drawable/bg_yellow_textcolor"
+                android:textSize="@dimen/text_default_size"
+                />
+
+            <RadioButton
+                android:id="@+id/radio_feed_20_yuan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/rect_normal_yellow"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="20元"
+                android:textColor="@drawable/bg_yellow_textcolor"
+                android:textSize="@dimen/text_default_size"
+                />
+
+            <RadioButton
+                android:id="@+id/radio_feed_other"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/rect_normal_yellow"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="其他"
+                android:textColor="@drawable/bg_yellow_textcolor"
+                android:textSize="@dimen/text_default_size"
+                />
+
+        </LinearLayout>
+
+    </com.lvchehui.www.xiangbc.view.mutilRadioGroup.MyRadioGroup>
+
+</LinearLayout>

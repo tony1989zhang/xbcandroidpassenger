@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="6"
+    android:layout_margin="2dp"
+    android:background="@color/transparent"
+    android:orientation="horizontal"
+    android:layout_weight="1"
+    >
+    <!--android:background="@drawable/tag_normal"-->
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/choose_need_item_left"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title_size"
+        android:gravity="center"
+        android:text="@string/template"
+        />
+
+    <TextView
+        android:id="@+id/tv_des"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:background="@drawable/choose_need_item_right"
+        android:gravity="center|left"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:singleLine="false"
+        android:textColor="@color/text_default_hintcolor"
+        android:textSize="@dimen/text_middle_size"
+        android:drawableRight="@mipmap/choose_need_item_go_icon"
+        android:drawablePadding="5dp"
+        />
+
+</LinearLayout>

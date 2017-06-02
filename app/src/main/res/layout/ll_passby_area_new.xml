@@ -1,0 +1,68 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center|left"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/bg_white_gray"
+    >
+    <LinearLayout
+        android:id="@+id/ll_passby_area_new"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_gray"
+        android:gravity="center_vertical"
+        android:minHeight="48.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/item_wayto_icon"
+            />
+
+        <TextView
+            android:id="@+id/tv_passby_area_new"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="10.0dip"
+            android:hint="@string/hint_passby_area"
+            android:maxLines="3"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_default_size"/>
+
+        <ImageView
+            android:id="@+id/iv_passby_area_new"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:gravity="center|right"
+            android:layout_marginRight="6dp"
+            android:src="@mipmap/edit_search_clear_normal"
+            />
+    </LinearLayout>
+
+    <View
+        style="@style/lineSolid_center"
+        />
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

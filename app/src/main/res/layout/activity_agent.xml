@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="true"
+                android:fitsSystemWindows="true"
+                tools:context=".activity.mine.AgentActivity">
+
+    <com.lvchehui.www.xiangbc.view.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.lvchehui.www.xiangbc.view.TitleView>
+
+
+    <com.lvchehui.www.xiangbc.view.dragtop.DragTopLayout
+        android:id="@+id/drag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_view">
+
+        <LinearLayout
+            android:id="@+id/top_view"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+
+            <com.lvchehui.www.xiangbc.view.dragtop.BanSlidingViewPage
+                android:id="@+id/banSlidingViewPage_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+            </com.lvchehui.www.xiangbc.view.dragtop.BanSlidingViewPage>
+        </LinearLayout>
+
+        <!--收益明细-->
+        <LinearLayout
+            android:id="@+id/drag_content_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/title_column_color"
+                android:gravity="center"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/tv_payments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/incomes_detail"
+                    android:textColor="@color/text_default_color"
+                    android:textSize="@dimen/text_default_size"
+                    />
+
+                <View
+                    android:layout_width="1sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/hintColor"/>
+
+                <TextView
+                    android:id="@+id/tv_member"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/my_friends"
+                    android:textColor="@color/text_default_color"
+                    android:textSize="@dimen/text_default_size"
+                    />
+
+                <View
+                    android:layout_width="1sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/hintColor"/>
+
+
+                <TextView
+                    android:id="@+id/tv_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/flash_atm"
+                    android:textColor="@color/text_default_color"
+                    android:textSize="@dimen/text_default_size"
+                    />
+            </LinearLayout>
+
+            <com.lvchehui.www.xiangbc.view.dragtop.BanSlidingViewPage
+                android:id="@+id/banSlidingViewPage_msg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </com.lvchehui.www.xiangbc.view.dragtop.BanSlidingViewPage>
+        </LinearLayout>
+    </com.lvchehui.www.xiangbc.view.dragtop.DragTopLayout>
+
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view_divider"
+        android:orientation="vertical">
+
+        <com.lvchehui.www.xiangbc.view.TitleView
+            android:id="@+id/title_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_view"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:scrollbars="none"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:minHeight="48dp"
+                    android:text="@string/hint_fleet_settled"
+                    android:textSize="15dp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_team_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_hint_bg"
+                    android:hint="@string/hint_leader_name"
+                    android:maxLength="34"
+                    android:minHeight="48dp"
+                    android:padding="5dp"
+                    android:textSize="16sp"/>
+                <!--android:background="@drawable/et_checked_pressed"-->
+                <!--android:background="@color/fill_hint_color"-->
+                <!--android:background="@drawable/tag_bg_selector"-->
+                <EditText
+                    android:id="@+id/et_team_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/et_hint_bg"
+                    android:digits="@string/digits_num"
+                    android:hint="@string/hint_leader_tel_num"
+                    android:maxLength="11"
+                    android:minHeight="48dp"
+                    android:padding="5dp"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/et_team_des"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/et_hint_bg"
+                    android:gravity="left"
+                    android:hint="@string/hint_fleet_info"
+                    android:minHeight="120dp"
+                    android:padding="5dp"
+                    android:textSize="16sp"
+                    />
+
+                <!--<Button
+                    android:id="@+id/btn_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rect_complete"
+                    android:minHeight="48dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/submit"
+                    android:textColor="@color/white"
+                    />-->
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="@drawable/btn_bottom_bg_outside"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:text="提交"
+            style="@style/BottomBtn"
+            />
+    </RelativeLayout>
+</RelativeLayout>

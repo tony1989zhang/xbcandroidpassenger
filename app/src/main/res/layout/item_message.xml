@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/selector_large_edit_dialog_white"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="对于您本次取消订单，扣除您一半的订金。"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_default_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+            <!--android:text="Large Text"-->
+            <!--android:gravity="center|right"-->
+            <!--android:textSize="@dimen/text_default_size"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:id="@+id/tv_data"-->
+            <!--android:layout_gravity="right" />-->
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|bottom"
+                android:text="2016年3月23日 13:24"
+                android:layout_weight="1"
+                android:textColor="@color/text_default_hintcolor"
+                android:textSize="@dimen/text_middle_size" />
+
+            <TextView
+                android:id="@+id/tv_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textColor="@color/text_default_yellow"
+                android:textSize="@dimen/text_middle_size"
+                android:text="点击查看" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,97 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_gray"
+    android:gravity="center_vertical"
+    android:minHeight="48.0dip"
+    android:paddingLeft="10.0dip"
+    android:paddingRight="10.0dip">
+
+    <LinearLayout
+        android:id="@+id/ll_passenger_num"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/item_car_icon"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="5dp"
+            android:text="@string/passenger_num"
+            android:textColor="@color/text_default_lightblack"
+            android:textSize="15.0sp"/>
+
+        <TextView
+            android:id="@+id/tv_passenger_num"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector"
+            android:digits="@string/digits_num"
+            android:gravity="center"
+            android:hint="@string/hint_passenger_num"
+            android:maxLength="3"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_default_size"/>
+
+        <View
+            style="@style/lineSolid_height"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_car_num"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/item_car_icon"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+
+            android:layout_marginRight="5dp"
+            android:text="@string/car_num"
+            android:textColor="@color/text_default_lightblack"
+            android:textSize="15.0sp"/>
+
+        <TextView
+            android:id="@+id/tv_car_num"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/selector"
+            android:digits="@string/digits_num"
+            android:gravity="center"
+            android:hint="@string/hint_car_num"
+            android:maxLength="3"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_default_size"/>
+    </LinearLayout>
+</LinearLayout>

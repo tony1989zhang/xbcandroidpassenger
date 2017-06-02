@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/include_pay_ok">
+
+        <com.lvchehui.www.xiangbc.view.CustomScrollView
+            android:id="@+id/custom_scollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fadingEdge="none"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <include layout="@layout/include_ad" />
+
+                <!--车辆介绍-->
+                <include layout="@layout/include_quoted_car_info" />
+
+                <!--包含费用-->
+                <include layout="@layout/include_quoted_include_cost" />
+
+                <!--持有证件-->
+                <include layout="@layout/include_quoted_certificate_info" />
+
+                <!--用户评价-->
+                <include layout="@layout/include_user_ratings" />
+
+                <!--车费详情-->
+                <include layout="@layout/include_order_cost_detail" />
+            </LinearLayout>
+        </com.lvchehui.www.xiangbc.view.CustomScrollView>
+
+        <com.lvchehui.www.xiangbc.view.TitleView
+            android:id="@+id/title_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/include_pay_ok"
+        layout="@layout/include_btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

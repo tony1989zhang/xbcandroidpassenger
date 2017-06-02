@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_white_gray"
+    android:layout_height="@dimen/title_height"
+    android:gravity="center_vertical"
+    android:minHeight="48.0dip"
+    android:paddingLeft="10.0dip"
+    android:paddingRight="10.0dip"
+    android:orientation="horizontal"
+    >
+
+
+    <ImageView
+        android:id="@+id/iv_pay_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/item_alipay_icon"
+        />
+    <TextView
+        android:id="@+id/et_campany_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:layout_marginLeft="5dp"
+        android:textSize="@dimen/text_default_size"
+        android:textColor="@color/text_default_color"
+        android:gravity="center|start"
+        android:text="46087023343234324@qq.com"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_other"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:textSize="@dimen/text_default_size"
+        android:textColor="@color/text_default_color"
+        android:gravity="center|end"
+        android:drawablePadding="5dp"
+        android:drawableEnd="@mipmap/item_back_icon"
+        android:drawableRight="@mipmap/item_back_icon"
+        android:hint="更改提现账号"
+        />
+
+</LinearLayout>

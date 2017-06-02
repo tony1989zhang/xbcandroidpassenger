@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <com.lvchehui.www.xiangbc.view.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.lvchehui.www.xiangbc.view.TitleView>
+
+    <LinearLayout
+        android:id="@+id/ll_invoice_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_gray"
+        android:gravity="center_vertical"
+        android:minHeight="48.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/item_invoice_icon"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="5dp"
+                android:text="@string/invoice_common"
+                android:textColor="@color/text_default_lightblack"
+                android:textSize="15.0sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/invoice_common_hint"
+                android:textColor="#c8c8c8"
+                android:textSize="15.0sp"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_common_use"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_common_bg_selector"
+            android:text="@string/common_use"
+            android:shadowColor="@color/btn_text_shadow_color"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:textSize="@dimen/text_default_size"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+    <View
+        style="@style/lineSolid"
+        android:layout_marginLeft="40dp"
+        />
+    
+    <LinearLayout
+        android:id="@+id/rl_tickethead"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white"
+        android:gravity="center|left"
+        android:paddingLeft="40dp">
+        <EditText
+            android:id="@+id/tv_tickethead_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center|left"
+            android:hint="@string/hint_invoice_header"
+            android:textSize="@dimen/text_middle_size"/>
+    </LinearLayout>
+
+    <View
+        style="@style/lineSolid"
+        android:layout_marginLeft="40dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/rl_sj_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white"
+        android:gravity="center|left"
+        android:paddingLeft="40dp">
+
+        <EditText
+            android:id="@+id/tv_sj_name_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center|left"
+            android:hint="@string/hint_receiver"
+            android:textSize="@dimen/text_middle_size"/>
+    </LinearLayout>
+
+    <View
+        style="@style/lineSolid"
+        android:layout_marginLeft="40dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/rl_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white"
+        android:gravity="center|left"
+        android:paddingLeft="40dp">
+        
+
+        <EditText
+            android:id="@+id/tv_phone_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/hint_telephone_number"
+            android:textSize="@dimen/text_middle_size"/>
+    </LinearLayout>
+
+    <View
+        style="@style/lineSolid"
+        android:layout_marginLeft="40dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/rl_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white"
+        android:gravity="center|left"
+        android:paddingLeft="40dp">
+
+        <EditText
+            android:id="@+id/tv_address_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/hint_receiver_address"
+            android:textSize="@dimen/text_middle_size"/>
+    </LinearLayout>
+
+    <View
+        style="@style/lineSolid"
+        android:layout_marginLeft="40dp"
+        />
+
+</LinearLayout>

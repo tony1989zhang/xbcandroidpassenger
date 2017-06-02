@@ -1,0 +1,273 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hint_bg_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.mine.info.MyInfoActivity">
+
+    <com.lvchehui.www.xiangbc.view.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--头像-->
+    <RelativeLayout
+        android:id="@+id/ll_avatar"
+        android:layout_width="fill_parent"
+        android:layout_height="141dp"
+        android:background="@color/title_bg_color"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="81dp"
+            android:layout_height="81dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/default_sex_man_icon" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <!--<View style="@style/lineSolid" />-->
+
+        <!--昵称-->
+        <LinearLayout
+            android:id="@+id/ll_nickname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:minHeight="48.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/nickname"
+                android:textColor="@color/text_default_lightblack"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|right"
+                android:hint="@string/hint_nickname"
+                android:padding="5dp"
+                android:textColor="@color/text_default_color"
+                android:textSize="@dimen/text_default_size"
+                />
+            <!--<com.lvchehui.www.xiangbc.view.EditText.EditTextWithDel
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|right"
+                android:hint="@string/hint_nickname"
+                android:background="@null"
+                android:drawablePadding="5dp"
+                android:padding="5dp"
+                android:textColor="@color/text_default_color"
+                android:textSize="@dimen/text_default_size"
+                />-->
+        </LinearLayout>
+
+        <View
+            style="@style/lineSolid"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp" />
+
+        <!--性别-->
+        <LinearLayout
+            android:id="@+id/ll_gender"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="48.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/gender"
+                android:textColor="@color/text_default_lightblack"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/tv_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|right"
+                android:hint="@string/hint_gender"
+                android:padding="5dp"
+                android:textColor="@color/text_default_color"
+                android:textSize="@dimen/text_default_size" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/item_back_icon" />
+        </LinearLayout>
+
+        <View
+            style="@style/lineSolid"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp" />
+
+        <!--生日-->
+        <LinearLayout
+            android:id="@+id/ll_birthday"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="48.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/birthday"
+                android:textColor="@color/text_default_lightblack"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/tv_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|right"
+                android:hint="@string/hint_birthday"
+                android:padding="5dp"
+                android:textColor="@color/text_default_color"
+                android:textSize="@dimen/text_default_size" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/item_back_icon" />
+        </LinearLayout>
+
+        <View
+            style="@style/lineSolid"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp" />
+
+        <!--邮箱-->
+        <LinearLayout
+            android:id="@+id/ll_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="48.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/email"
+                android:textColor="@color/text_default_lightblack"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|right"
+                android:hint="@string/hint_email"
+                android:padding="5dp"
+                android:textColor="@color/text_default_color"
+                android:textSize="@dimen/text_default_size" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/item_back_icon" />
+        </LinearLayout>
+
+        <View
+            style="@style/lineSolid"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_credit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="48.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/credit_value"
+                android:textColor="@color/text_default_lightblack"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/tv_credit_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/credit_value_user"
+                android:padding="5dp"
+                android:gravity="center|right"
+                android:textColor="@color/text_default_color"
+                android:textSize="@dimen/text_default_size" />
+
+            <ImageView
+                android:id="@+id/imgArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/item_back_icon" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

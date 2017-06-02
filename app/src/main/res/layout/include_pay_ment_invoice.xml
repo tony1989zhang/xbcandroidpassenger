@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="2"
+            android:background="@color/lineSolidColor"
+            />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:text="@string/invoice_info"
+            android:textColor="@color/warmGrey"
+            android:textSize="@dimen/text_middle_size"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="2"
+            android:background="@color/lineSolidColor"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_compand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="盛世文化传媒有限公司"
+            android:textColor="@color/text_default_lightblack"
+            android:textSize="@dimen/text_default_size"/>
+
+
+        <TextView
+            android:id="@+id/tv_invoice_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="张小姐  13055787933"
+            android:textColor="@color/text_default_color"
+            android:textSize="@dimen/text_default_size"/>
+
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="地址：福建省厦门市集美区商务运营中心603栋4楼"
+            android:maxLines="2"
+            android:textColor="@color/text_default_lightblack"
+            android:textSize="@dimen/text_default_size"/>
+    </LinearLayout>
+
+</LinearLayout>

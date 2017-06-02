@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8000"
+    android:id="@+id/dialog_email"
+    >
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/common_alert_bg"
+         >
+
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="180dp"
+            android:id="@+id/iv_email"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_email_account"
+            android:id="@+id/email_ac_tv"
+            android:textSize="@dimen/title_main_text_size"
+            android:layout_below="@+id/iv_email"
+            android:inputType="textEmailAddress"
+            android:maxLength="30"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_default_size"
+            android:text="@string/dialog_email_change_tv"
+            android:id="@+id/change_tv"
+            android:layout_below="@+id/email_ac_tv"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/btn_ok"
+            android:id="@+id/btn_ok"
+            android:layout_below="@+id/change_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/tag_bg_selector"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+             />
+    </RelativeLayout>
+</RelativeLayout>

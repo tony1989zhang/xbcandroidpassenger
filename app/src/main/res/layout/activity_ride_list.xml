@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.lvchehui.www.xiangbc.view.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:background="@color/title_column_color"
+        android:weightSum="3"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_yesterday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_default_size"
+            android:textColor="@color/text_default_yellow"
+            android:padding="10dp"
+            android:text="前一天"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/tv_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_default_size"
+            android:textColor="@color/text_default_yellow"
+            android:gravity="center"
+            android:layout_weight="1"
+             />
+        <TextView
+            android:id="@+id/tv_tomorrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_default_size"
+            android:textColor="@color/text_default_yellow"
+            android:layout_weight="1"
+            android:gravity="end|right"
+            android:padding="10dp"
+            android:text="后一天"
+            />
+    </LinearLayout>
+
+    <View style="@style/lineSolid" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_widget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdgeLength="0dip"
+            android:footerDividersEnabled="false"
+            android:overScrollMode="never" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+        <LinearLayout
+            android:id="@+id/no_free_ride_match"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/view_divider"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:src="@drawable/no_free_ride_match_car"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="暂无符合您要求的顺风车"
+                android:textSize="@dimen/text_default_size"
+                android:textColor="@color/text_default_color"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="您可以尝试立即约车，让车队为您报价"
+                android:textSize="@dimen/text_default_size"
+                android:textColor="@color/text_default_color"
+                />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_divider"
+            style="@style/lineSolid"
+            android:layout_above="@id/tv_ok"
+            android:layout_marginBottom="20dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/tag_bg_selector_default"
+            android:gravity="center"
+            android:text="立即约车"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+   <TextView
+        android:id="@+id/empty_propt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="测试数据"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="gone" />
+
+</LinearLayout>

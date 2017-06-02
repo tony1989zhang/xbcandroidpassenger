@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_include_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:drawableLeft="@drawable/smail_circle"
+                android:drawablePadding="5dp"
+                android:drawableRight="@mipmap/tag_way_icon"
+                android:gravity="center|left"
+                android:text="包含费用"
+                android:textColor="@color/text_default_hintcolor"
+                android:textSize="@dimen/text_middle_size" />
+
+            <TextView
+                android:id="@+id/tv_include_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="2dp"
+                android:background="@color/divider" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:weightSum="3"
+            >
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_default_size"
+                    android:textColor="@color/text_default_color"
+                    android:text="司机住宿费" />
+
+                <CheckBox
+                    style="@style/checkBoxStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="0.8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_default_size"
+                    android:textColor="@color/text_default_color"
+                    android:text="路桥费" />
+
+                <CheckBox
+                    android:id="@+id/cb_is_road_and_bridge"
+                    style="@style/checkBoxStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_seat_risks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_default_size"
+                    android:textColor="@color/text_default_color"
+                    />
+
+                <CheckBox
+                    android:id="@+id/cb_is_seat_risks"
+                    style="@style/checkBoxStyle"
+                    android:checked="true"
+                    android:focusable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:weightSum="3"
+            >
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_default_size"
+                    android:textColor="@color/text_default_color"
+                    android:text="司机工作餐" />
+
+                <CheckBox
+                    android:id="@+id/cb_is_table"
+                    style="@style/checkBoxStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="0.8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_default_size"
+                    android:textColor="@color/text_default_color"
+                    android:text="停车费" />
+
+                <CheckBox
+                    android:id="@+id/cb_is_parking"
+                    style="@style/checkBoxStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_default_size"
+                    android:textColor="@color/text_default_color"
+                    android:text="油费" />
+
+                <CheckBox
+                    android:id="@+id/cb_is_gasoline"
+                    style="@style/checkBoxStyle"
+                    android:checked="true"
+                    android:focusable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_remarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="备注：司机输入的备注显示"
+            android:textSize="@dimen/text_default_size"
+            android:textColor="@color/text_default_color" />
+
+    </LinearLayout>
+</LinearLayout>

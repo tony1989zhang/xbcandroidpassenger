@@ -1,0 +1,25 @@
+<LinearLayout
+    android:id="@+id/ll_remarks_edit"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_gray"
+    android:gravity="center_vertical"
+    android:minHeight="100dip"
+    android:layout_marginLeft="10dp"
+    android:paddingRight="10.0dip"
+    android:visibility="gone"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:id="@+id/et_remarks_edit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:background="@drawable/et_hint_bg"
+        android:gravity="top"
+        android:hint="@string/hint_remarks"
+        android:textSize="@dimen/text_middle_size"
+        />
+</LinearLayout>

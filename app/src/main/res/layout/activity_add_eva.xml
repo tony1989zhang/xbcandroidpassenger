@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <com.lvchehui.www.xiangbc.view.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.lvchehui.www.xiangbc.view.tag.TagListView
+                xmlns:f="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tag_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/common_margin"
+                android:paddingLeft="@dimen/common_margin"
+                android:paddingRight="@dimen/common_margin"
+                android:paddingTop="16.0dip"
+                f:horizontalSpacing="@dimen/tag_horizontal_spacing"
+                f:orientation="horizontal"
+                f:verticalSpacing="@dimen/tag_vertical_spacing"/>
+
+            <!--android:background="@drawable/rect_normal_yellow"
+                android:textColor="@drawable/bg_yellow_textcolor"-->
+
+            <!--<com.lvchehui.www.xiangbc.view.mutilRadioGroup.MyRadioGroup
+                android:id="@+id/radiogroup_rate_car"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_uc_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rect_normal_yellow"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="车辆卫生好"
+                        android:textColor="@drawable/bg_yellow_textcolor"
+                        android:textSize="@dimen/text_default_size"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radio_uc_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rect_normal_yellow"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="司机服务差"
+                        android:textColor="@drawable/bg_yellow_textcolor"
+                        android:textSize="@dimen/text_default_size"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radio_uc_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rect_normal_yellow"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="车况较新"
+                        android:textColor="@drawable/bg_yellow_textcolor"
+                        android:textSize="@dimen/text_default_size"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/radio_uc_4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rect_normal_yellow"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="旅途很愉快"
+                        android:textColor="@drawable/bg_yellow_textcolor"
+                        android:textSize="@dimen/text_default_size"
+                        />
+
+
+                    <RadioButton
+                        android:id="@+id/radio_uc_5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rect_normal_yellow"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="车辆没有准时"
+                        android:textColor="@drawable/bg_yellow_textcolor"
+                        android:textSize="@dimen/text_default_size"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radio_uc_6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rect_normal_yellow"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="享包车很便捷"
+                        android:textColor="@drawable/bg_yellow_textcolor"
+                        android:textSize="@dimen/text_default_size"
+                        />
+                </LinearLayout>
+            </com.lvchehui.www.xiangbc.view.mutilRadioGroup.MyRadioGroup>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="说两句"
+                    android:textSize="@dimen/text_default_size"
+                    android:visibility="gone"/>
+                <!-- @android:drawable/edit_text -->
+                <EditText
+                    android:id="@+id/add_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/tag_bg_selector"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:hint="请输入您的评价…"
+                    android:inputType="textMultiLine"
+                    android:maxLines="5"
+                    android:minLines="3"
+                    android:padding="8dp"
+                    android:scrollbars="vertical"
+                    android:textSize="@dimen/text_middle_size"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <View
+                style="@style/lineSolid"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <include layout="@layout/include_eva_ratingbar"
+                />
+
+            <TextView
+                android:id="@+id/btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                style="@style/BottomBtn"
+                android:gravity="center"
+                android:minHeight="48dp"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_default_size"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

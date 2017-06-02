@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical">
+
+    <View
+        style="@style/lineSolid"
+        />
+
+    <!--联系人-->
+    <include layout="@layout/ll_contacts"/>
+    <View
+        style="@style/lineSolid_center"
+        />
+
+    <!--乘客人数和车辆-->
+    <include layout="@layout/ll_passenger_and_car_num"/>
+    <View
+        style="@style/lineSolid_center"
+        />
+
+    <!--座位-->
+    <include layout="@layout/ll_select_seat"/>
+    <View
+        style="@style/lineSolid_center"
+        />
+
+    <!--发票-->
+    <include layout="@layout/ll_invoice"/>
+    <View
+        style="@style/lineSolid_center"
+        />
+
+    <!--备注-->
+    <include layout="@layout/ll_remarks"/>
+
+    <!--编辑备注-->
+    <include layout="@layout/ll_remarks_edit"/>
+
+    <View
+        style="@style/lineSolid_center"
+        />
+</LinearLayout>

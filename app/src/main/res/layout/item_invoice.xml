@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:gravity="center|left"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/tv_tickethead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="抬头:" />
+
+        <TextView
+            android:id="@+id/tv_tickethead_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_tickethead"
+            android:layout_alignBottom="@+id/tv_tickethead"
+            android:layout_toRightOf="@+id/tv_tickethead"
+            android:text="TextView" />
+
+    </RelativeLayout>
+
+    <View style="@style/lineSolid"
+        android:layout_marginLeft="10dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:visibility="gone"
+        android:gravity="center|left"
+        android:paddingLeft="5dp" >
+
+        <TextView
+            android:id="@+id/tv_address_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地址:" />
+
+        <TextView
+            android:id="@+id/tv_address_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_address_tag"
+            android:layout_alignBottom="@+id/tv_address_tag"
+            android:layout_toRightOf="@+id/tv_address_tag"
+            android:text="泉州" />
+
+    </RelativeLayout>
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="10dp"-->
+        <!--android:background="@color/main_color"-->
+        <!--/>-->
+</LinearLayout>

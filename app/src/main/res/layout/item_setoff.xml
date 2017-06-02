@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_color"
+              android:orientation="vertical">
+
+    <View
+        style="@style/lineSolid"
+        android:layout_height="1dp"
+        android:background="@color/bg_gray"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        >
+
+        <!--车队名称-->
+        <TextView
+            android:id="@+id/tv_quote_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/item_back_icon"
+            android:gravity="center_vertical"
+            android:minHeight="30dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="龙翔客运"
+            android:textColor="@color/text_default_color"
+            android:textSize="@dimen/text_default_size"
+            />
+
+        <!--司机&客服-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="right|center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_driver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/btn_black_selector"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:gravity="center_vertical"
+                android:text="司机"
+                android:textColor="@color/text_default_color"
+                android:textSize="@dimen/text_middle_size"
+                />
+
+            <TextView
+                android:id="@+id/tv_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/btn_black_selector"
+                android:textColor="@color/text_default_color"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:gravity="center_vertical"
+                android:text="客服"
+                android:textSize="@dimen/text_middle_size"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--订单详情-->
+    <LinearLayout
+        android:id="@+id/ll_ltinerary_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_gray"
+        android:orientation="vertical"
+        android:weightSum="4"
+        >
+
+        <!--订单号-->
+        <TextView
+            android:id="@+id/tv_dingd_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="订单号：XM201603030001"
+            android:textColor="@color/text_default_color"
+            android:textSize="@dimen/text_middle_size"
+            />
+
+        <View
+            style="@style/lineSolid"
+            android:layout_marginTop="5dp"
+            />
+
+        <!--时间-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_data_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="02月23日 14:23"
+                android:textColor="@color/text_default_color"
+                android:textSize="@dimen/text_default_size"
+                />
+
+            <TextView
+                android:id="@+id/tv_ltinerary_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="单程用车"
+                android:textColor="@color/text_default_color"
+                android:textSize="@dimen/text_default_size"
+                />
+
+        </RelativeLayout>
+
+        <!--地址-->
+        <TextView
+            android:id="@+id/tv_address_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="5dp"
+            android:maxEms="15"
+            android:maxLines="3"
+            android:text="福建省集美区商务运营中心3678号5楼详细某某某座位某某某旁边"
+            android:textColor="@color/text_default_color"
+            android:textSize="@dimen/text_default_size"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_total_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/text_default_color"
+                android:textSize="@dimen/title_main_text_size"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="right|center"
+        android:minHeight="30dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+
+        <TextView
+            android:id="@+id/tv_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_black_selector"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="地图"
+            android:textSize="@dimen/text_middle_size"
+            android:textColor="@color/text_default_color"
+            />
+
+        <TextView
+            android:id="@+id/tv_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_yellow_selector"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="付款"
+            android:textSize="@dimen/text_middle_size"
+            android:textColor="@color/swipe_refrsh_color3"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

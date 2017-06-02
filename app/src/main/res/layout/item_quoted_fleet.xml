@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/item_quoted_fleet"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <View
+        style="@style/lineSolid"
+        android:layout_marginLeft="100dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/iv_item_fleet_pic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="5dp"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:id="@+id/tv_item_fleet_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="龙翔客运中心"
+                    android:textColor="@color/text_default_color"
+                    android:textSize="@dimen/text_default_size"/>
+
+                <TextView
+                    android:id="@+id/tv_item_level_rank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/level_bg"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="享八级"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_small_size"
+                    />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_volume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/warmGrey"
+                android:textSize="@dimen/text_middle_size"/>
+
+            <TextView
+                android:id="@+id/tv_item_loss_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text=""
+                android:textColor="@color/warmGrey"
+                android:textSize="@dimen/text_middle_size"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_end_booking_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:text="@string/end_booking_time"
+                    android:textColor="@color/warmGrey"
+                    android:textSize="@dimen/text_middle_size"/>
+
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/tv_item_quote_price"
+                    android:layout_alignParentBottom="true"
+                    android:paddingBottom="5dp"
+                    android:text="¥"
+                    android:textSize="@dimen/text_default_size"
+                    android:textColor="@color/text_default_color"
+                    />-->
+                <TextView
+                    android:id="@+id/tv_item_quote_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/text_default_color"
+                    android:textSize="@dimen/title_main_text_size"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

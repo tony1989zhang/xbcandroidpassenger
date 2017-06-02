@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    >
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view_divider"
+        android:background="@color/hint_bg_color"
+        android:orientation="vertical">
+
+        <com.lvchehui.www.xiangbc.view.TitleView
+            android:id="@+id/title_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!--统一社会信用代码-->
+        <LinearLayout
+            android:id="@+id/ll_credential_number"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_white_gray"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:minHeight="48.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/unity_society_credit_code"
+                android:textColor="@color/text_default_lightblack"
+                android:textSize="15.0sp"/>
+
+            <!--<EditText
+                android:id="@+id/tv_credential_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:digits="@string/digits_num"
+                android:padding="5dp"
+                android:textColor="@color/text_default_color"
+                android:textSize="@dimen/text_default_size"
+                />-->
+            <com.lvchehui.www.xiangbc.view.EditText.EditTextWithDel
+                android:id="@+id/tv_credential_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:digits="@string/digits_num"
+                android:hint="请输入统一社会信用代码"
+                android:padding="5dp"
+                android:background="@null"
+                android:drawablePadding="5dp"
+                android:textColor="@color/text_default_color"
+                android:textSize="@dimen/text_default_size"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:paddingBottom="20dp"
+            android:orientation="vertical"
+            >
+
+            <!--<TextView
+                android:id="@+id/tv_upload_photo_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="上传营业执照图片"
+                android:textColor="@color/text_default_color"
+                android:textSize="@dimen/text_default_size"
+                />-->
+
+            <TextView
+                android:id="@+id/tv_describe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="10dp"
+                android:hint="请在营业执照复印件上，按如下要求完成并拍照上传。\n注：手写“仅用于享包车认证”，并在复印件上加盖红色公章。"
+                android:textSize="@dimen/text_middle_size"
+                android:textColor="@color/warmGrey"
+                />
+
+            <ImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:layout_below="@+id/tv_describe"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rect_normal_bwhite"
+                android:minHeight="100dp"
+                android:minWidth="100dp"/>
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_photo"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@drawable/rect_normal_yellow"
+                android:minHeight="25dp"
+                android:text="@string/take_photo_again_or_upload"
+                android:textColor="@color/text_default_yellow"
+                android:textSize="@dimen/text_middle_size"/>
+        </LinearLayout>
+
+
+        <!--<include
+            layout="@layout/include_btn_ok"
+            />-->
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_divider"
+        style="@style/lineSolid"
+        android:layout_above="@id/tv_ok"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_ok"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        style="@style/BottomBtn"
+        android:gravity="center"
+        android:text="保存"
+        android:textColor="@color/white"/>
+</RelativeLayout>

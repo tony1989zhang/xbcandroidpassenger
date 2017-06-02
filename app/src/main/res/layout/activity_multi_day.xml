@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view_divider"
+        android:orientation="vertical">
+
+        <com.lvchehui.www.xiangbc.view.TitleView
+            android:id="@+id/title_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ScrollView
+            android:id="@+id/content_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <!--出发城市-->
+                <include layout="@layout/ll_start_city"/>
+
+                <View style="@style/lineSolid_center"/>
+
+                <!--出发日期-->
+                <include layout="@layout/ll_start_date"/>
+
+                <View style="@style/lineSolid_center"/>
+
+                <!--结束日期-->
+                <include layout="@layout/ll_finish_date"/>
+
+                <View style="@style/lineSolid_center"/>
+
+                <!--当日用车情况-->
+                <include layout="@layout/ll_intraday_trip_info"/>
+
+                <View style="@style/lineSolid_center"/>
+
+                <!--多日用车情况-->
+                <LinearLayout
+                    android:id="@+id/ll_multi_day_trip_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    />
+
+                <!--<include
+                    layout="@layout/include_multi_day_center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    />-->
+
+                <!--<include
+                    layout="@layout/include_round_trip_foot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />-->
+
+                <!--联系人-->
+                <include layout="@layout/ll_contacts"/>
+
+                <View style="@style/lineSolid_center"/>
+
+                <!--乘客数和车辆数-->
+                <include layout="@layout/ll_passenger_and_car_num"/>
+
+                <View style="@style/lineSolid_center"/>
+
+                <!--座位-->
+                <include layout="@layout/ll_select_seat"/>
+
+                <View style="@style/lineSolid_center"/>
+
+                <!--发票-->
+                <include layout="@layout/ll_invoice"/>
+
+                <View style="@style/lineSolid_center"/>
+
+                <!--备注-->
+                <include layout="@layout/ll_remarks"/>
+
+                <!--编辑备注-->
+                <include layout="@layout/ll_remarks_edit"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <!--<include
+        android:id="@+id/include_pay_ok"
+        layout="@layout/include_btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>-->
+    <View
+        android:id="@+id/view_divider"
+        style="@style/lineSolid"
+        android:layout_above="@+id/tv_ok"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_ok"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        style="@style/BottomBtn"
+        android:gravity="center"
+        android:text="生成订单"
+        android:textColor="@color/white"/>
+</RelativeLayout>

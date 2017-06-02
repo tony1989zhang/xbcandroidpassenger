@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/include_confirm"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        layout="@layout/activity_web"
+        />
+    <View
+        android:id="@+id/view_divider"
+        style="@style/lineSolid"
+        android:layout_above="@+id/tv_ok"
+        />
+
+    <TextView
+        android:id="@+id/tv_ok"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        style="@style/BottomBtn"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/white"/>
+</LinearLayout>

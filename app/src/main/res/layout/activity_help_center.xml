@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <com.lvchehui.www.xiangbc.view.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <!--用车指南-->
+        <LinearLayout
+            android:id="@+id/ll_ride_guide"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_gray"
+            android:gravity="center_vertical"
+            android:minHeight="48.0dip"
+            android:paddingRight="10.0dip">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/ride_guide"
+                android:textColor="@color/text_default_lightblack"
+                android:textSize="15.0sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/item_back_icon"/>
+        </LinearLayout>
+
+        <View
+            style="@style/lineSolid"
+            />
+
+        <!--常见问题-->
+        <LinearLayout
+            android:id="@+id/ll_faq"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_gray"
+            android:gravity="center_vertical"
+            android:minHeight="48.0dip"
+            android:paddingRight="10.0dip">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/faq"
+                android:textColor="@color/text_default_lightblack"
+                android:textSize="15.0sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/item_back_icon"/>
+        </LinearLayout>
+
+        <View
+            style="@style/lineSolid"
+            />
+
+        <!--超行程费用参考-->
+        <LinearLayout
+            android:id="@+id/ll_over_journey_cost_ref"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_gray"
+            android:gravity="center_vertical"
+            android:minHeight="48.0dip"
+            android:paddingRight="10.0dip">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/over_journey_cost_ref"
+                android:textColor="@color/text_default_lightblack"
+                android:textSize="15.0sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/item_back_icon"/>
+        </LinearLayout>
+
+        <View
+            style="@style/lineSolid"
+            />
+
+        <!--会员协议-->
+        <LinearLayout
+            android:id="@+id/ll_leaguer_agreement"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_gray"
+            android:gravity="center_vertical"
+            android:minHeight="48.0dip"
+            android:paddingRight="10.0dip">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/leaguer_agreement"
+                android:textColor="@color/text_default_lightblack"
+                android:textSize="15.0sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/item_back_icon"/>
+        </LinearLayout>
+
+        <View
+            style="@style/lineSolid"
+            />
+
+        <!--隐私条款-->
+        <LinearLayout
+            android:id="@+id/ll_privacy_provision"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_gray"
+            android:gravity="center_vertical"
+            android:minHeight="48.0dip"
+            android:orientation="horizontal"
+            android:paddingRight="10.0dip"
+            >
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/privacy_provision"
+                android:textColor="@color/text_default_lightblack"
+                android:textSize="15.0sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/item_back_icon"/>
+        </LinearLayout>
+
+
+        <View
+            style="@style/lineSolid"
+            />
+
+        <!--意外险套餐-->
+        <LinearLayout
+            android:id="@+id/ll_accident_insurance_plan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_gray"
+            android:gravity="center_vertical"
+            android:minHeight="48.0dip"
+            android:paddingRight="10.0dip">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/accident_insurance_plan"
+                android:textColor="@color/text_default_lightblack"
+                android:textSize="15.0sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/item_back_icon"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/lineSolid"
+            />
+    </LinearLayout>
+</LinearLayout>

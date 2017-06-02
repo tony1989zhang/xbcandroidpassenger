@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@id/view_divider"
+        >
+        <com.lvchehui.www.xiangbc.view.TitleView
+            android:id="@+id/title_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="更换手机后个人信息不变，请使用新手机号登录"
+            android:textColor="@color/text_default_hintcolor"
+            android:textSize="@dimen/text_middle_size"
+            />
+
+        <com.lvchehui.www.xiangbc.view.EditText.EditTextWithDel
+            android:id="@+id/account_et"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/et_hint_bg"
+            android:digits="0123456789"
+            android:gravity="center|left"
+            android:inputType="number"
+            android:hint="请输入新手机号"
+            android:textColorHint="@color/hint_text_color"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:textSize="@dimen/text_default_size" />
+
+        <com.lvchehui.www.xiangbc.view.EditText.EditTextForPwd
+            android:id="@+id/captcha_et"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/et_hint_bg"
+            android:digits="@string/digits_pwd"
+            android:gravity="center|left"
+            android:hint="@string/hint_input_pwd_old"
+            android:textColorHint="@color/hint_text_color"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:textSize="@dimen/text_default_size"/>
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/tag_bg_selector"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:weightSum="5">
+
+            <EditText
+                android:id="@+id/captcha_et"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@null"
+                android:digits="0123456789"
+                android:gravity="center|left"
+                android:hint="@string/hint_input_captcha"
+                android:maxLength="4"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textSize="@dimen/text_default_size" />
+
+            <com.lvchehui.www.xiangbc.view.button.ButtonForCaptcha
+                android:id="@+id/captcha_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="2" />
+
+        </LinearLayout>-->
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_divider"
+        style="@style/lineSolid"
+        android:layout_above="@+id/btn_ok"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        style="@style/BottomBtn"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

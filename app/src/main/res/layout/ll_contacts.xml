@@ -1,0 +1,68 @@
+<LinearLayout
+    android:id="@+id/ll_contacts"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_gray"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:minHeight="48.0dip"
+    android:paddingLeft="10.0dip"
+    android:paddingRight="10.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/item_contact_icon"
+        />
+
+    <EditText
+        android:id="@+id/et_contacts"
+        android:layout_width="0.0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:background="@null"
+        android:padding="10dp"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/text_default_size"
+        android:hint="@string/hint_contact"
+        />
+
+    <View
+        style="@style/lineSolid_height"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        />
+
+    <EditText
+        android:id="@+id/et_contacts_phone"
+        android:layout_width="0.0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:background="@null"
+        android:inputType="phone"
+        android:padding="5dp"
+        android:textSize="@dimen/text_default_size"
+        android:textCursorDrawable="@null"
+        android:hint="@string/hint_contact_telephone"
+        />
+
+    <TextView
+        android:id="@+id/change_contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_common_bg_selector"
+        android:text="@string/common_use"
+        android:shadowColor="@color/btn_text_shadow_color"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:gravity="center"
+        android:textSize="@dimen/text_default_size"
+        android:textColor="@color/white"
+        />
+</LinearLayout>

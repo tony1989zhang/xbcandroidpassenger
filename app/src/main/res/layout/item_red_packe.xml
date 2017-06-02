@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    >
+    <View
+        style="@style/lineSolid"
+        />
+    <!--@drawable/bg_red_packet-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/red_packe"
+        >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="￥"
+            android:layout_marginLeft="15dp"
+            android:textSize="36sp"
+            android:gravity="center|bottom"
+            android:paddingBottom="30dp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/tv_red_total"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="100sp"
+            android:textStyle="bold"
+            android:text="50"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="3"
+        >
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_red_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_main_text_size"
+            android:text="优惠红包"
+            />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_red_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_default_size"
+            android:textColor="@color/white"
+            android:text="无门槛立减"
+            />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_default_size"
+            android:text="有效期至2016-07-02"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+    <View
+        style="@style/lineSolid"
+        />
+</LinearLayout>

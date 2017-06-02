@@ -1,0 +1,109 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+//    解决.9图片 从eclipse 拷贝进来不规范问题
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+
+
+    defaultConfig {
+        applicationId "com.lvchehui.www.xiangbc"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 2
+        versionName "1.1"
+
+        //个推参数说明
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "iVwUVAhmgg70kuxGV4D7KA",
+                GETUI_APP_KEY   : "0s3ACB9brY7YiD65toWuP9",
+                GETUI_APP_SECRET: "aAhPVv7bXJ8ykYWWVgzOJ",
+                PACKAGE_NAME    : applicationId
+        ]
+
+
+
+        //设置buildConfig 测试的时候使用的数据
+        buildConfigField "boolean", "addTestData", "false"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            //个推资源精选配置
+            //  minifyEnabled true
+            //shrinkResources true
+            //proguardFiles getDefaultProguardFile('proguard-android.txt'),'proguard-rules.pro'
+        }
+    }
+   // 取消检测生成release 规范
+    lintOptions{
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    useLibrary 'org.apache.http.legacy'
+}
+final def var = dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile files('libs/xUtils-3.3.32.jar')
+    compile files('libs/gson-2.5.jar')
+    compile files('libs/lib_uil.jar')
+    compile files('libs/android-support-v7-recyclerview.jar')
+    compile files('libs/pinyin4j-2.5.0.jar')
+    compile files('libs/pinyin4android1.0.jar')
+    compile files('libs/core-3.0.0.jar')
+    compile files('libs/httpcore-4.2.4.jar')
+    compile files('libs/glide-3.6.1.jar')
+//    compile project(':SlidingMenu')
+    compile project(':AndroidEventBus-master')
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+    //密码库插件
+    compile 'com.jungly:gridPasswordView:0.3'
+
+    //个推使用的库
+    compile 'com.getui:sdk:2.8.1.0'
+    compile 'com.getui:ext:2.0.3'
+    compile 'com.android.support:support-v4:+'
+    //图片放大缩小
+    compile 'com.bm.photoview:library:1.4.0'
+
+    // 地址与日期选择器
+    compile 'cn.qqtheme.framework:WheelPicker:latest.release'
+    compile 'com.lovedise:permissiongen:0.0.6'
+    // 对话框
+    /*compile 'com.afollestad.material-dialogs:core:0.9.0.1'*/
+
+    //内存泄漏 测试
+  /*    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.3'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.3'*/
+}
+var
+//一键分享
+dependencies {
+    compile files('libs/MobCommons-2016.0426.1819.jar')
+    compile files('libs/MobTools-2016.0426.1819.jar')
+    compile files('libs/ShareSDK-Core-2.7.2.jar')
+    compile files('libs/ShareSDK-QQ-2.7.2.jar')
+    compile files('libs/ShareSDK-QZone-2.7.2.jar')
+    compile files('libs/ShareSDK-ShortMessage-2.7.2.jar')
+    compile files('libs/ShareSDK-SinaWeibo-2.7.2.jar')
+    compile files('libs/ShareSDK-Wechat-2.7.2.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.7.2.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.7.2.jar')
+    compile files('libs/pgyer_sdk.jar')
+    compile files('libs/AndroidEasingFunctions-1.0.0.jar')
+    compile files('libs/AndroidViewAnimations-1.1.3.jar')
+    compile files('libs/NineOldAndroid-2.4.0.jar')
+    compile files('libs/AMap_2DMap_V2.9.0_20160525.jar')
+    compile files('libs/AMap_Location_V2.4.1_20160414.jar')
+    compile files('libs/AMap_Search_V3.3.0_20160616.jar')
+    compile files('libs/libammsdk.jar')
+    compile 'com.alibaba:fastjson:1.2.16'
+    compile files('libs/alipaySdk-20160825.jar')
+    compile 'com.android.support:appcompat-v7:23.1.0'
+}
+

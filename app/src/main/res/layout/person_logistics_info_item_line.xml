@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F2F2F2"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp" >
+
+    <com.lvchehui.www.xiangbc.view.NodeListView.CustomTextView
+        android:id="@+id/info_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="张三"
+        android:textColor="@color/text_default_color"
+        android:textSize="@dimen/text_default_size"
+        android:layout_marginBottom="5dp"/>
+
+    <com.lvchehui.www.xiangbc.view.NodeListView.CustomTextView
+        android:id="@+id/dateTime_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="2015-1-1"
+        android:textColor="@color/text_default_hintcolor"
+        android:textSize="@dimen/text_small_size"
+        android:visibility="visible"/>
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view_divider"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <com.lvchehui.www.xiangbc.view.TitleView
+            android:id="@+id/title_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <!--<TextView
+            android:id="@+id/tv_import_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/tag_bg_selector"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="@string/import_from_contacts"
+            android:textColor="@color/text_default_color"
+            android:textSize="@dimen/text_default_size"
+            />-->
+
+        <LinearLayout
+            android:id="@+id/rv_sj_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@color/white"
+            android:gravity="center|left"
+            android:paddingLeft="10dp">
+
+            <!--<TextView
+                android:id="@+id/tv_sj_name"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="姓名:"
+                android:textColor="@color/text_default_lightblack"
+                android:textSize="@dimen/text_default_size" />-->
+
+            <EditText
+                android:id="@+id/tv_sj_name_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="@string/name"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/text_default_size"/>
+        </LinearLayout>
+
+        <View
+            style="@style/lineSolid"
+            android:layout_marginLeft="10dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/rv_sj_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@color/white"
+            android:gravity="center|left"
+            android:paddingLeft="10dp">
+
+            <!--<TextView
+                android:id="@+id/tv_phone_tag"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="手机号:"
+                android:textColor="@color/text_default_lightblack"
+                android:textSize="@dimen/text_default_size"
+            />-->
+
+            <EditText
+                android:id="@+id/tv_phone_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:digits="0123456789"
+                android:gravity="center|left"
+                android:hint="@string/hint_tel_num"
+                android:inputType="number"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/text_default_size"/>
+        </LinearLayout>
+
+        <View
+            style="@style/lineSolid"
+            android:layout_marginLeft="10dp"
+            />
+
+    </LinearLayout>
+
+    <!--<View
+        android:id="@+id/view_divider"
+        style="@style/lineSolid"
+        android:layout_above="@+id/tv_import_contact"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_import_contact"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/tag_bg_selector_default"
+        android:gravity="center"
+        android:text="@string/import_from_contacts"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_default_size"
+        />-->
+    <RelativeLayout
+        android:id="@+id/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="@drawable/btn_bottom_bg_outside"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView
+            android:id="@+id/tv_import_contact"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:text="从通讯录导入"
+            style="@style/BottomBtn"
+            />
+    </RelativeLayout>
+</RelativeLayout>

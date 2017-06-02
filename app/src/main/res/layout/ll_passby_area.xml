@@ -1,0 +1,27 @@
+<LinearLayout
+    android:id="@+id/ll_passby_area"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_gray"
+    android:gravity="center_vertical"
+    android:minHeight="48.0dip"
+    android:paddingLeft="10.0dip"
+    android:paddingRight="10.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/item_wayto_icon"
+        />
+
+    <TextView
+        android:id="@+id/tv_passby_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:hint="@string/hint_passby_area"
+        android:maxLines="3"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_default_size"/>
+</LinearLayout>

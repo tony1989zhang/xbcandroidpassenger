@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/include_pay_ok">
+
+        <com.lvchehui.www.xiangbc.view.CustomScrollView
+            android:id="@+id/custom_scollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fadingEdge="none"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <include layout="@layout/include_ad" />
+
+                <include layout="@layout/include_car_intro" />
+
+                <include layout="@layout/include_cost" />
+
+                <include layout="@layout/include_car_certificate"/>
+
+                <include layout="@layout/include_user_ratings" />
+
+                <include layout="@layout/include_fare_total" />
+            </LinearLayout>
+        </com.lvchehui.www.xiangbc.view.CustomScrollView>
+        <!--<View-->
+        <!--style="@style/lineSolid"-->
+        <!--/>-->
+        <com.lvchehui.www.xiangbc.view.TitleView
+            android:id="@+id/title_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/include_pay_ok"
+        layout="@layout/include_btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

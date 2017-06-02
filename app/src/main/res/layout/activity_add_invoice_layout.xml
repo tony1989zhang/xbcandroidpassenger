@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <com.lvchehui.www.xiangbc.view.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.lvchehui.www.xiangbc.view.TitleView>
+
+    <LinearLayout
+        android:id="@+id/rl_tickethead"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white"
+        android:gravity="center|left"
+        android:paddingLeft="10dp">
+
+        <!--<TextView
+            android:id="@+id/tv_tickethead"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="发票抬头:"
+            android:textSize="@dimen/text_large_size" />-->
+
+        <EditText
+            android:id="@+id/tv_tickethead_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center|left"
+            android:hint="@string/hint_invoice_header"
+            android:textSize="@dimen/text_middle_size"/>
+    </LinearLayout>
+
+    <View
+        style="@style/lineSolid"
+        android:layout_marginLeft="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/rl_sj_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white"
+        android:gravity="center|left"
+        android:paddingLeft="10dp">
+
+        <!--<TextView
+            android:id="@+id/tv_sj_name"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="收件人:"
+            android:textSize="@dimen/text_large_size" />-->
+
+        <EditText
+            android:id="@+id/tv_sj_name_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center|left"
+            android:hint="@string/hint_receiver"
+            android:textSize="@dimen/text_middle_size"/>
+    </LinearLayout>
+
+    <View
+        style="@style/lineSolid"
+        android:layout_marginLeft="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/rl_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white"
+        android:gravity="center|left"
+        android:paddingLeft="10dp">
+
+        <!--<TextView
+            android:id="@+id/tv_phone_tag"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="联系方式:"
+            android:textSize="@dimen/text_large_size" />-->
+
+        <EditText
+            android:id="@+id/tv_phone_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/hint_telephone_number"
+            android:textSize="@dimen/text_middle_size"/>
+    </LinearLayout>
+
+    <View
+        style="@style/lineSolid"
+        android:layout_marginLeft="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/rl_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white"
+        android:gravity="center|left"
+        android:paddingLeft="10dp">
+
+        <!--<TextView
+            android:id="@+id/tv_address_tag"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="地址:"
+            android:textSize="@dimen/text_large_size" />-->
+
+        <EditText
+            android:id="@+id/tv_address_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/hint_receiver_address"
+            android:textSize="@dimen/text_middle_size"/>
+    </LinearLayout>
+
+    <View
+        style="@style/lineSolid"
+        android:layout_marginLeft="10dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view_divider"
+        android:orientation="vertical"
+
+        android:fitsSystemWindows="true">
+        <!--android:background="@color/main_color"-->
+        <!--android:clipToPadding="true"-->
+        <com.lvchehui.www.xiangbc.view.TitleView
+            android:id="@+id/title_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_view"
+            android:layout_marginTop="5dp"
+            android:scrollbars="none"
+            >
+
+            <LinearLayout
+                android:id="@+id/l2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <!--用车类型-->
+                    <TextView
+                        android:id="@+id/tv_ride_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:text="@string/ride_type"
+                        android:textSize="@dimen/text_default_size"/>
+
+
+                    <com.lvchehui.www.xiangbc.view.mutilRadioGroup.MyRadioGroup
+                        android:id="@+id/radiogroup_use_car"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radio_uc_1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/rect_normal_yellow"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:paddingTop="5dp"
+                                android:text="@string/one_day_ride"
+                                android:textColor="@drawable/bg_yellow_textcolor"
+                                android:textSize="@dimen/text_default_size"
+                                />
+
+                            <RadioButton
+                                android:id="@+id/radio_uc_2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/rect_normal_yellow"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:paddingTop="5dp"
+                                android:text="@string/multi_day_ride"
+                                android:textColor="@drawable/bg_yellow_textcolor"
+                                android:textSize="@dimen/text_default_size"
+                                />
+
+                            <RadioButton
+                                android:id="@+id/radio_uc_3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/rect_normal_yellow"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:paddingTop="5dp"
+                                android:text="@string/one_way_trip"
+                                android:textColor="@drawable/bg_yellow_textcolor"
+                                android:textSize="@dimen/text_default_size"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="3"
+                            >
+
+                            <RadioButton
+                                android:id="@+id/radio_uc_4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/rect_normal_yellow"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:paddingTop="5dp"
+                                android:text="@string/round_trip"
+                                android:textColor="@drawable/bg_yellow_textcolor"
+                                android:textSize="@dimen/text_default_size"
+                                />
+
+
+                            <RadioButton
+                                android:id="@+id/radio_uc_5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/rect_normal_yellow"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:paddingTop="5dp"
+                                android:text="@string/free_ride"
+                                android:textColor="@drawable/bg_yellow_textcolor"
+                                android:textSize="@dimen/text_default_size"
+                                />
+                        </LinearLayout>
+                    </com.lvchehui.www.xiangbc.view.mutilRadioGroup.MyRadioGroup>
+                    <!--<com.lvchehui.www.xiangbc.view.tag.TagListView-->
+                    <!--xmlns:f="http://schemas.android.com/apk/res-auto"-->
+                    <!--android:id="@+id/tag_view_ride"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:paddingBottom="@dimen/common_margin"-->
+                    <!--android:paddingLeft="@dimen/common_margin"-->
+                    <!--android:paddingRight="@dimen/common_margin"-->
+                    <!--android:paddingTop="16.0dip"-->
+                    <!--f:horizontalSpacing="@dimen/tag_horizontal_spacing"-->
+                    <!--f:orientation="horizontal"-->
+                    <!--f:verticalSpacing="@dimen/tag_vertical_spacing" />-->
+
+                </LinearLayout>
+
+                <!--功能类型-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_fun_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:text="@string/function_type"
+                        android:textSize="@dimen/text_default_size"/>
+
+                    <!--          <com.lvchehui.www.xiangbc.view.tag.TagListView
+                                  xmlns:f="http://schemas.android.com/apk/res-auto"
+                                  android:id="@+id/tag_view_fun"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:paddingBottom="@dimen/common_margin"
+                                  android:paddingLeft="@dimen/common_margin"
+                                  android:paddingRight="@dimen/common_margin"
+                                  android:paddingTop="16.0dip"
+                                  f:horizontalSpacing="@dimen/tag_horizontal_spacing"
+                                  f:orientation="horizontal"
+                                  f:verticalSpacing="@dimen/tag_vertical_spacing" />-->
+                    <com.lvchehui.www.xiangbc.view.mutilRadioGroup.MyRadioGroup
+                        android:id="@+id/radiogroup_function_cate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radio_fc_1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/rect_normal_yellow"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:paddingTop="5dp"
+                                android:text="@string/offer_price"
+                                android:textColor="@drawable/bg_yellow_textcolor"
+                                android:textSize="@dimen/text_default_size"
+                                />
+
+                            <RadioButton
+                                android:id="@+id/radio_fc_2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/rect_normal_yellow"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:paddingTop="5dp"
+                                android:text="@string/red_package"
+                                android:textColor="@drawable/bg_yellow_textcolor"
+                                android:textSize="@dimen/text_default_size"
+                                />
+
+                            <RadioButton
+                                android:id="@+id/radio_fc_3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/rect_normal_yellow"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:paddingTop="5dp"
+                                android:text="@string/payment"
+                                android:textColor="@drawable/bg_yellow_textcolor"
+                                android:textSize="@dimen/text_default_size"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="3"
+                            >
+
+                            <RadioButton
+                                android:id="@+id/radio_fc_4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/rect_normal_yellow"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:paddingTop="5dp"
+                                android:text="@string/agent"
+                                android:textColor="@drawable/bg_yellow_textcolor"
+                                android:textSize="@dimen/text_default_size"
+                                />
+
+                            <RadioButton
+                                android:id="@+id/radio_fc_5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/rect_normal_yellow"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:paddingTop="5dp"
+                                android:text="@string/others"
+                                android:textColor="@drawable/bg_yellow_textcolor"
+                                android:textSize="@dimen/text_default_size"
+                                />
+                        </LinearLayout>
+                    </com.lvchehui.www.xiangbc.view.mutilRadioGroup.MyRadioGroup>
+
+                </LinearLayout>
+
+                <!--反馈内容-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical"
+                    >
+
+                    <!--<TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:text="@string/feedback_info"
+                        android:textSize="@dimen/text_default_size" />-->
+                    <!-- @android:drawable/edit_text -->
+                    <EditText
+                        android:id="@+id/add_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/et_hint_bg"
+                        android:enabled="true"
+                        android:gravity="top"
+                        android:hint="@string/hint_feedback_info"
+                        android:inputType="textMultiLine"
+                        android:maxLines="10"
+                        android:minLines="8"
+                        android:padding="10dp"
+                        android:scrollbars="none"
+                        android:textColor="@color/warmGrey"
+                        android:textSize="@dimen/text_default_size"
+                        >
+                    </EditText>
+                    <!--android:scrollbars="vertical"-->
+                    <!--android:background="@drawable/et_checked_pressed"-->
+                    <!--android:background="@drawable/et_checked_normal"-->
+                </LinearLayout>
+
+                <!--<TextView
+                    android:id="@+id/tv_feedback_tj"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/title_height"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rect_complete"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/submit"
+                    android:textColor="@color/white"/>-->
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/view_divider"
+        style="@style/lineSolid"
+        android:layout_above="@+id/tv_feedback_tj"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_feedback_tj"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        style="@style/BottomBtn"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/white"/>
+</RelativeLayout>

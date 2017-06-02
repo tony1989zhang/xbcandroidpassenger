@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        style="@style/lineSolid"
+        android:layout_height="1dp"
+        android:background="@color/bg_gray" />
+
+    <LinearLayout
+        android:id="@+id/ll_quote_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:minHeight="45dp"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/tv_quote_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:text="查看已报价"
+            android:textColor="@color/text_default_color"
+            android:textSize="@dimen/text_default_size" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/item_back_icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_ltinerary_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_gray"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/tv_dingd_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="订单号：XM201603030001"
+            android:textColor="@color/text_default_color"
+            android:textSize="@dimen/text_middle_size" />
+
+        <View
+            style="@style/lineSolid"
+            android:layout_marginTop="5dp" />
+
+        <!--时间-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_data_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="02月23日 14:23"
+                android:textColor="@color/text_default_color"
+                android:textSize="@dimen/text_default_size" />
+
+            <TextView
+                android:id="@+id/tv_ltinerary_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="单程用车"
+                android:textColor="@color/text_default_color"
+                android:textSize="@dimen/text_default_size" />
+
+        </RelativeLayout>
+
+        <!--地址-->
+        <TextView
+            android:id="@+id/tv_address_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="5dp"
+            android:maxEms="15"
+            android:maxLines="3"
+            android:text="福建省集美区商务运营中心3678号5楼详细某某某座位某某某旁边"
+            android:textColor="@color/text_default_color"
+            android:textSize="@dimen/text_default_size" />
+
+        <!--倒计时-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <com.lvchehui.www.xiangbc.view.timeCountDown.CountdownView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tv_ltinerary_countdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                app:isHideTimeBackground="true"
+                app:isShowDay="false"
+                app:isShowHour="true"
+                app:isShowMillisecond="false"
+                app:isShowMinute="true"
+                app:isShowSecond="true"
+                app:isTimeTextBold="false"
+                app:suffixGravity="bottom"
+                app:suffixHour=":"
+                app:suffixMillisecond="毫秒"
+                app:suffixMinute=":"
+                app:suffixSecond=""
+                app:suffixTextColor="#000000"
+                app:suffixTextSize="12sp"
+                app:timeTextColor="#000000"
+                app:timeTextSize="20sp" />:
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_ltinerary_countdown"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="距离报价结束还有"
+                android:textColor="@color/text_default_color"
+                android:textSize="@dimen/text_middle_size" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:minHeight="30dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_cancel_dingd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_black_selector"
+            android:textColor="@color/text_default_color"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="取消订单"
+            android:textSize="@dimen/text_middle_size" />
+    </LinearLayout>
+
+
+    <!--<TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>-->
+</LinearLayout>
